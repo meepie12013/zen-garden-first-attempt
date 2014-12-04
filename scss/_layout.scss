@@ -1,0 +1,59 @@
+/* 
+Layout Rules
+    CSS, by its very nature, is used to lay elements out on the page. However, there is a distinction between layouts dictating the major and minor components of a page. The minor components—such as a callout, or login form, or a navigation item—sit within the scope of major components such as a header or footer. I refer to the minor components as Modules and will dive into those in the next section. The major components are referred to as Layout styles.
+    Layout styles can also be divided into major and minor styles based on reuse. Major layout styles such as header and footer are traditionally styled using ID selectors but take the time to think about the elements that are common across all components of the page and use class selectors where appropriate.
+*/
+$desktop: 1140px;
+
+#zen-intro h1 {
+    text-align: left;
+    padding: 50px 50px 0px 100px;
+    text-transform: uppercase;
+    display: table-caption;
+    font-size: 4rem;
+    line-height: 1;
+    //float: right;
+}
+
+#zen-intro h2 {
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    border-bottom-color: #F00;
+    text-align: left;
+    padding-left: 100px;
+    text-transform: uppercase;
+    -moz-transform: scale(-1, -1);
+-webkit-transform: scale(-1, -1);
+-o-transform: scale(-1, -1);
+-ms-transform: scale(-1, -1);
+transform: scale(-1, -1);
+}
+
+header {
+    
+}
+
+.summary p:nth-child(1) {
+//    font-size: 1rem;
+//    -webkit-transform: rotate(-90deg); 
+//-moz-transform: rotate(-90deg);	
+//    float:left;
+    font-size: .8rem;
+    margin-top: 0;
+    padding-top: 0;
+    white-space:pre-line;
+}
+
+.summary p:nth-child(2) {
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-align: right;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+.explanation {
+    
+}
